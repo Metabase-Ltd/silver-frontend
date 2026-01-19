@@ -17,7 +17,7 @@ export default function Home() {
         
         <p className="text-sm text-center text-zinc-400 dark:text-zinc-600 max-w-md mt-8">
           Prices are fetched directly from the exchange via secure API endpoints. 
-          Updates occur automatically every 3 seconds.
+          Updates occur automatically every 1 second.
         </p>
       </main>
       

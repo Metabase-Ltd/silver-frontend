@@ -37,8 +37,8 @@ export const SilverPriceDisplay = () => {
     // Initial fetch
     fetchPrice();
 
-    // Poll every 3 seconds
-    const intervalId = setInterval(fetchPrice, 3000);
+    // Poll every 1 second
+    const intervalId = setInterval(fetchPrice, 1000);
 
     return () => clearInterval(intervalId);
   }, [fetchPrice]);
