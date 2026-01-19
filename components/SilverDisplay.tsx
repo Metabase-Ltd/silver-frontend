@@ -63,7 +63,18 @@ export const SilverPriceDisplay = () => {
       <div className="p-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 flex items-center gap-2">
-            <span className="text-2xl">🥈</span> Silver Price
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" className="inline-block">
+              <defs>
+                <linearGradient id="silverIconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#f0f0f0" />
+                  <stop offset="50%" stopColor="#a0a0a0" />
+                  <stop offset="100%" stopColor="#f0f0f0" />
+                </linearGradient>
+              </defs>
+              <circle cx="16" cy="16" r="14" stroke="#777" strokeWidth="1" fill="url(#silverIconGradient)" />
+              <text x="16" y="18" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="12" fill="#444">Ag</text>
+            </svg>
+             Silver Price
           </h2>
           {loading && !priceData && (
             <span className="text-xs font-medium px-2 py-1 bg-blue-100 text-blue-800 rounded-full animate-pulse">
