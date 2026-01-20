@@ -21,9 +21,6 @@ export const SilverPriceDisplay = () => {
       const binanceJson: SilverApiResponse = await binanceRes.json();
       const ibJson: SilverApiResponse = await ibRes.json();
 
-      let hasError = false;
-      let errorMsg = '';
-
       if (binanceJson.success) {
         setBinanceData(binanceJson.data);
       } else {
