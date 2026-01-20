@@ -4,6 +4,7 @@ export interface SilverPriceData {
   currency: string;
   timestamp: number;
   source: string;
+  conid?: number;
 }
 
 export interface SilverApiResponse {
